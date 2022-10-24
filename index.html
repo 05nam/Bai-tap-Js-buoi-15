@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <!-- !Bai tap 01 -->
+    <div class="container contact-form">
+      <div class="contact-image">
+        <img
+          src="https://image.ibb.co/kUagtU/rocket_contact.png"
+          alt="rocket_contact"
+        />
+      </div>
+      <form method="post">
+        <h3>Bài tập 01</h3>
+        <div class="">
+          <div class="col-md">
+            <div class="form-group">
+              <input
+                id="number__1"
+                type="text"
+                name="txtName"
+                class="form-control"
+                placeholder="nhập điểm thứ 01 "
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="number__2"
+                type="text"
+                name="txtEmail"
+                class="form-control"
+                placeholder="nhập điểm thứ 02 "
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="number__3"
+                type="text"
+                name="txtPhone"
+                class="form-control"
+                placeholder="nhập điểm thứ 03 "
+                value=""
+              />
+            </div>
+            <div>
+              <h2>Vui lòng chọn đối tượng ưu tiên :</h2>
+
+              <ul>
+                <li class="type">
+                  <input type="radio" name="selector" id="object1" />
+                  <label for="object1">Đối tượng 01 + 2.5d</label>
+
+                  <div class="check"></div>
+                </li>
+
+                <li class="type">
+                  <input type="radio" name="selector" id="object2" />
+                  <label for="object2">Đối tượng 02 + 1.5D </label>
+                  <div class="check"></div>
+                </li>
+
+                <li class="type">
+                  <input type="radio" name="selector" id="object3" />
+                  <label for="object3">Đối tượng 03 + 1D </label>
+                  <div class="check"></div>
+                </li>
+                <li class="type">
+                  <input type="radio" name="selector" id="object0" />
+                  <label for="object0"> Không Đối tượng ưu tiên </label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span style="padding: 20px"></span>
+
+              <div style="clear: both"></div>
+
+              <h2>Vui lòng chọn khu vực ưu tiên :</h2>
+              <ul>
+                <li class="type">
+                  <input type="radio" name="selecto1" id="areaA" />
+                  <label for="areaA">Khu Vực A + 1D</label>
+
+                  <div class="check"></div>
+                </li>
+
+                <li class="type">
+                  <input type="radio" name="selector1" id="areaB" />
+                  <label for="areaB">Khu Vực B + 2D </label>
+                  <div class="check"></div>
+                </li>
+
+                <li class="type">
+                  <input type="radio" name="selector1" id="areaC" />
+                  <label for="areaC">Khu Vực C + 3D </label>
+                  <div class="check"></div>
+                </li>
+                <li class="type">
+                  <input type="radio" name="selector1" id="areaK" />
+                  <label for="areaK"> Không thuộc khu vực ưu tiên </label>
+                  <div class="check"></div>
+                </li>
+              </ul>
+              <h2>Vui lòng nhập điểm chuẩn:</h2>
+              <input
+                id="diemchuan"
+                type="text"
+                name="txtName"
+                class="form-control"
+                placeholder="nhập điểm chuẩn "
+                value=""
+              />
+            </div>
+            <div class="form-group py-5">
+              <input
+                type="button"
+                name="btnSubmit"
+                class="btnContact"
+                value="Tính "
+                id="btn__01"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="thongBao">
+          <span> Thông báo kết quả </span>
+
+          <p id="text_bt1">..........</p>
+        </div>
+      </form>
+    </div>
+    <!-- !Bai tap 02 -->
+    <div class="container contact-form">
+      <div class="contact-image">
+        <img
+          src="https://image.ibb.co/kUagtU/rocket_contact.png"
+          alt="rocket_contact"
+        />
+      </div>
+      <form method="post">
+        <h3>Bài tập 02</h3>
+        <div class="">
+          <div class="col-md">
+            <div class="form-group">
+              <input
+                id="number__bt2"
+                type="text"
+                name="txtName"
+                class="form-control"
+                placeholder="nhập điểm số điện (KW) "
+                value=""
+              />
+            </div>
+
+            <div class="form-group py-5">
+              <input
+                type="button"
+                name="btnSubmit"
+                class="btnContact"
+                value="Tính "
+                id="btn__02"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="thongBao">
+          <span> Thông báo tiền điện </span>
+
+          <p id="text_bt2">..........</p>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/BT01.js"></script>
+    <script src="./js/BT02.js"></script>
+  </body>
+</html>
